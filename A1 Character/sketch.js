@@ -12,4 +12,5 @@ function setup() {
 
 function draw() {
   background(220);
-}
+ ellipse(350,499,200,440 )
+}  
