@@ -12,8 +12,14 @@ function setup() {
 
 function draw() {
   background(220);
+  fill(0)
   ellipse(350,600,300,440 )
+  fill(255)
  ellipse(350,600,200,440 )
+ fill(0)
  ellipse(350,251,300,250 )
  
+ ellipse( 350,251,70,55)
+ circle (300,200, 50)
+ circle(400,200,50)
 }  
