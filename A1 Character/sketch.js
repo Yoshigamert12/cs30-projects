@@ -18,8 +18,10 @@ function draw() {
  ellipse(350,600,200,440 )
  fill(0)
  ellipse(350,251,300,250 )
- 
+ fill(255)
  ellipse( 350,251,70,55)
  circle (300,200, 50)
  circle(400,200,50)
+ circle(300,200,30)
+ circle(400,200,30)
 }  
