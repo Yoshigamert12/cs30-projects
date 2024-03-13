@@ -22,6 +22,9 @@ function draw() {
  ellipse( 350,251,70,55)
  circle (300,200, 50)
  circle(400,200,50)
+ fill (0)
  circle(300,200,30)
  circle(400,200,30)
+ rect (230,400,45,45)
+ line (230,420,80,700)
 }  
