@@ -11,6 +11,8 @@ let buttonPressed = false;
 // Button object to store all of the button variable together
 let myButton = {x: 0, y: 0, w: 0, h: 0, color: ""}
 
+let ballsarray = [];
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   
@@ -55,4 +57,67 @@ buttonPressed=false;
 function drawButton() {
   fill(myButton.color);
   rect(myButton.x, myButton.y, myButton.w, myButton.h);
+}
+
+
+function Funy(){
+if (buttonPressed=false);
+  {
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+  createball();
+    
+    
+  
+  }
+
+  function draw() {
+    background(30);
+
+
+    fill(255,0,0);
+  
+
+    for (let i=0; i< ballsarray.length; i++) {
+    circle(ballsarray[i].x, ballsarray[i].y, ballsarray[i].diameter);
+    ballsarray[i].x += ballsarray[i].dx;
+    ballsarray[i].y += ballsarray[i].dy;
+    }
+  }
+
+  function createball() {
+    let newBall = {
+      x: random(width),
+      y: random(height),
+      diameter: random(25, 100),
+      dx: random(-5, 5),
+      dy: random(-5, 5),
+
+
+
+
+
+
+
+  };
+
+  ballsarray.push(newBall)
+  }
+  function mousePressed() {
+  createball();
+    ballsarray[ballsarray.length-1].x + mouseX;
+    ballsarray[ballsarray.length-1].y + mouseY;
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
 }
