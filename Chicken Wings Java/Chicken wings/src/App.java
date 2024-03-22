@@ -8,8 +8,9 @@ public class App {
    pr=.75;
    System.out.print( pr + " this is how much 1 chicken wing costs ");
 
-   double tot;
-   tot= ch / pr ;
+   int tot;
+   tot= 6 ;
+
    System.out.print( tot + " this is how many chicken wing you can get ");
 
 
