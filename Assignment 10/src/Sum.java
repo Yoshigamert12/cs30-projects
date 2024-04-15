@@ -1,12 +1,13 @@
 public class Sum
 {
 	//instance variables
-	private double one, two, sum, dub, rem;
+	private double one, two, sum, dub, rem, thr, div;
 
-	public void setNums(double num1, double num2)
+	public void setNums(double num1, double num2, double num3)
 	{
         one=num1;
         two=num2;
+        thr=num3;
 
 
 	}
@@ -35,6 +36,15 @@ public class Sum
         System.out.println(rem);
 
     }
+    public void divide() {
+
+        div= sum/thr;
+        System.out.println(div);
+
+
+    }
+
+    
 
 
 }
