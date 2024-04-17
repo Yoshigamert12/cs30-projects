@@ -4,14 +4,14 @@ public class Fahrenheit
 
 	public void getFahrenheit(double temp)
 	{
-        cel= temp;
+        fah= temp;
 
 
 	}
 
 	public void getCelsius(double temp)
 	{
-        fah = temp;
+        cel = temp;
 
 		cel = ((fah - 32) *5.0)/ 9.0;
 		
@@ -20,4 +20,12 @@ public class Fahrenheit
 
 	}
 
+
+
+
+
+
+
+
+	
 }
