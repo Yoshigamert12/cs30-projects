@@ -1,7 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-       System.out.println(per);
+      System.out.println(lenScanner);
+      
+      System.out.println(widScanner);
     
 
 
