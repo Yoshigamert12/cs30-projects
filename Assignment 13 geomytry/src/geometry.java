@@ -2,62 +2,43 @@
 import java.util.Scanner;  
 
 public class geometry{
-    
+    public static void main(String[] args) {
+        Scanner len  = new Scanner(System.in);  
+        System.out.println("Enter the length");
 
-    public void perimeter(  double len, double wid, double per){
-        try (Scanner lenScanner = new Scanner(System.in)) {
-            System.out.println("Print your desired length"); 
-
-            String lenSize = lenScanner.nextLine();
-            System.out.println("chosen length is "+ lenScanner);
-
-            len = lenScanner;
-
-        }
-
-        try (Scanner widScanner = new Scanner(System.in)) {
-            System.out.println("Print your desired width"); 
-    
-            String widSize = widScanner.nextLine();
-            System.out.println("chosen width is "+ widScanner);}
+        String lenght = len.nextLine();  
+        System.out.println("Length is: " + lenght );  
         
-
-        try (Scanner perScanner = new Scanner(System.in)) {
-            
-
-
-
-
-
-        }
-
-
-    
-    public void surfaceArea(double sid, double SA){
-
         
-
-        System.out.println("Print your answer here after calculating");
         
+        Scanner wid  = new Scanner(System.in);  
+        System.out.println("Enter the width");
+
+        String widht = wid.nextLine();  
+        System.out.println("Width is: " + widht );  
+
+        // System.out.print("the perimeter of the square is: " + per);
+
+
+
+        Scanner sid  = new Scanner(System.in);  
+        System.out.println("Enter the Side");
+
+        String sied = len.nextLine();  
+        System.out.println("Side is: " + sied ); 
+
+        // System.out.print("the Surface Are of the cube is: " + SFA2);
+
+
+        Scanner rad  = new Scanner(System.in);  
+        System.out.println("Enter the Radius");
+
+        String Raduis = rad.nextLine();  
+        System.out.println("Length is: " + Raduis ); 
+
+        // System.out.print("the Area of the circle is: " + CA2);
 
     }
-
-
-    public void circleArea(double rad){
-
-        System.out.println("Print your answer here after calculating");
-        
-
-
-
-
-    }
-
-
-
-
-
-
 
 
 
