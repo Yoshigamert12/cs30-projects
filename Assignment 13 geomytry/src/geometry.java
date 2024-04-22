@@ -1,46 +1,71 @@
 
 import java.util.Scanner;  
+import java.lang.Math;
 
 public class geometry{
+
+
     public static void main(String[] args) {
-        Scanner len  = new Scanner(System.in);  
+        Scanner inpt  = new Scanner(System.in);  
+        MathforCalc calc = new MathforCalc();
+
+
         System.out.println("Enter the length");
 
-        String lenght = len.nextLine();  
+        Double lenght = inpt.nextDouble();  
         System.out.println("Length is: " + lenght );  
         
         
-        
-        Scanner wid  = new Scanner(System.in);  
+         
         System.out.println("Enter the width");
 
-        String widht = wid.nextLine();  
+        Double widht = inpt.nextDouble();  
         System.out.println("Width is: " + widht );  
+        calc.perimeter (lenght, widht);
+        
+        System.out.println("    Enter the Side");
 
-        // System.out.print("the perimeter of the square is: " + per);
-
-
-
-        Scanner sid  = new Scanner(System.in);  
-        System.out.println("Enter the Side");
-
-        String sied = len.nextLine();  
+        Double sied = inpt.nextDouble();  
         System.out.println("Side is: " + sied ); 
+        calc.surfaceArea (sied);
 
-        // System.out.print("the Surface Are of the cube is: " + SFA2);
+        System.out.println("    Enter the Radius");
 
-
-        Scanner rad  = new Scanner(System.in);  
-        System.out.println("Enter the Radius");
-
-        String Raduis = rad.nextLine();  
+        Double Raduis = inpt.nextDouble();  
         System.out.println("Length is: " + Raduis ); 
+        calc.circleArea(Raduis);
 
-        // System.out.print("the Area of the circle is: " + CA2);
+        
 
     }
+
+
+     
+      
+
+
+
+
+
+
+
+     
+        
+
+
+     
+
+    
+
+
+
+
+
 
 
 
 
 }
+
+
+
