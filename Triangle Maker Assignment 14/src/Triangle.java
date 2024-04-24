@@ -1,5 +1,6 @@
 import java.util.Scanner; 
 import java.lang.Math.*;
+import  java.util.Formatter;
 
 public class Triangle
 {
@@ -9,48 +10,45 @@ public class Triangle
 
 	public Triangle()
 	{
-	   setSides(0,0,0);
-	   perimeter=0;
-	   theArea=0;
+	   
+	//    perimeter=0;
+	//    theArea=0;
 	}
 
 	public Triangle(int a, int b, int c)
 	{
         
 
-
+	}
 	public void setSides(int a, int b, int c)
 	{
-        double sida;
-        double sidb;
-        double sidc;
 
-        sida=a;
-        sidb=b;
-        sidc=c;
+
+        sideA=a;
+        sideB=b;
+        sideC=c;
         
 	}
 
 	public void calcPerimeter( )
 	{
         
-      perimeter=(a + b + c );
-
+      perimeter=sideA + sideB+ sideC ;
+	  
 	}
 
 	public void calcArea( )
 	{
-		double s ;
-        s = peri / 2;
-        double area;
-        area= sqrt(s(s–a)(s–b)(s–c))
-
+		double s = perimeter / 2;
+        
+        
+        theArea= Math.sqrt(s*(s-sideA)*(s-sideB)*(s-sideC));
+		System.out.printf("The Area Of The Triangle Is " + "'%5.0f'%n" , theArea);
 	}
 
 	public void print( )
 	{
-
-
-		System.out.println("\n\n");
+		
+		
 	}
 }
