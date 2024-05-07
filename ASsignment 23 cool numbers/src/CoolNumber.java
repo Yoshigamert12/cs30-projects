@@ -18,9 +18,26 @@ public class CoolNumber {
 	}
 	
 	
-	public static int countCoolNumbers( int stop )
+	public int countCoolNumbers( int stop )
 	{
-		return 0;
+	int count =0;
+		for (int i =6; i <= stop; i++){
+			if (isCoolNumber(i)){
+				return count + 1;
+
+			} else {
+				return count ;
+			}
+
+		}
+		
+		
+
+		
+
+
+
+		
 	}
 
 
