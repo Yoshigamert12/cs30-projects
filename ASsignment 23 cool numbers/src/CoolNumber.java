@@ -23,13 +23,14 @@ public class CoolNumber {
 	int count =0;
 		for (int i =6; i <= stop; i++){
 			if (isCoolNumber(i)){
-				return count + 1;
+				count++;
 
-			} else {
-				return count ;
-			}
+			}  
+				
+			
 
 		}
+		return count;
 		
 		
 
