@@ -10,13 +10,14 @@ public class LoopStatsRunner
         LoopStats lib = new LoopStats();
 
         System.out.println("Enter your first number: ");
-        int num1=keys.nextLine();
+        int start=keys.nextInt();
 
         System.out.println("Enter Your Second Number: ");
-        int num2 = keys.nextLine();
+        int stop = keys.nextInt();
 
 
-
+        System.out.println(" Number of Even Numbers: " + lib.getEvenCount());
+        System.out.println(" Number of Odd Numbers: " + lib.getOddCount());
 
 	}
 }
