@@ -15,9 +15,11 @@ public class LoopStatsRunner
         System.out.println("Enter Your Second Number: ");
         int stop = keys.nextInt();
 
+        lib.setNums(start, stop);
 
         System.out.println(" Number of Even Numbers: " + lib.getEvenCount());
         System.out.println(" Number of Odd Numbers: " + lib.getOddCount());
+        System.out.println(" The Sum of Your Numbers: " + lib.getTotal());
 
 	}
 }

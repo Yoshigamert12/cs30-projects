@@ -7,8 +7,8 @@ public class LoopStats
 
 	public void setNums( int beg , int end )
 	{
-       int start=beg;
-	  int stop=end;
+       start=beg;
+	  stop=end;
 	}
 
 
@@ -47,16 +47,13 @@ public class LoopStats
 		return oddCount;
 	}
 
-
-
-
-		
-	
-
 	public int getTotal()
 	{
 		int total=0;
+		for (int i =start; i <=stop; i++){
+			total+=i;
 
+		}
 
 
 
