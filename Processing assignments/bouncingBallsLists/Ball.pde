@@ -6,8 +6,10 @@ int cr,cg,cb;
 int dx,dy;
 //for screen dimensions
 int width,height;
+boolean infect;
+int grav;
     //Constructor Method
-    Ball (int ballx, int bally, int balld, int windoww, int windowh){
+    Ball (int ballx, int bally, int balld, int windoww, int windowh, boolean ballInf){
         x=ballx;
         y=bally;
         d=balld;
@@ -19,21 +21,37 @@ int width,height;
         //velocity
         dx= int (random(-10,10));
         dy= int (random(-10,10));
+        grav = -1;
 
         width=windoww;
         height=windowh;
 
+        infect = ballInf;
+
     }
 
 void display(){
+
+ 
+
     fill(cr,cg,cb);
     circle(x,y,d);
+
+    if (infect == true ){
+       cr = 0;
+       cg=255;
+       cb=50;
+    }
 
 }
 void move(){
     //Applying the velocity
     x= x+dx;
     y= y+dy;
+    if (infect == true) {
+        dy = dy - grav;
+    }
+    
 
     if (x<=0 + d/2 || x>= width - d/2 ){
         //reverses directrion
@@ -62,7 +80,19 @@ void move(){
 
         otherBall.dx = tempdx;
         otherBall.dy = tempdy;
+
+        if (otherBall.infect == true && infect == false){
+            infect = true;
+        }
+        else if (otherBall.infect == false && infect == true){
+            otherBall.infect = true;
+        }
+
     }
+
+
+       
+
     }
 
 

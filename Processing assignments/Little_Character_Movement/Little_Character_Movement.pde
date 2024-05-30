@@ -7,7 +7,8 @@ void setup() {
 }
 
 void draw() {
-  circle (90,90,50);
+  background(255, 255, 255);
+  joe.display();
 }
 
 void mousePressed(){
@@ -15,16 +16,16 @@ void mousePressed(){
 }
 
 void keyPressed(){
-  if (keyCode== UP){
+  if (keyCode== UP|| key == 'w'){
     joe.move(0);
   }
-    else if (keyCode== RIGHT){
+    else if (keyCode== RIGHT || key == 'd'){
     joe.move(1);
   }
-  else if (keyCode== DOWN ){
+  else if (keyCode== DOWN || key == 's'){
     joe.move(2);
   }
-  else if (keyCode== LEFT){
+  else if (keyCode== LEFT || key == 'a'){
     joe.move(3);
   }
 }

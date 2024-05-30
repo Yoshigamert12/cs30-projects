@@ -34,7 +34,7 @@ void draw() {
 }
 void mousePressed (){
     // Creates a new object at the end of the array
-    ballGroup.add(new Ball(mouseX, mouseY,100, width, height));
+    ballGroup.add(new Ball(mouseX, mouseY,100, width, height, false));
     //creates a new object at theis array postion
     
 
@@ -43,4 +43,15 @@ void mousePressed (){
     //     ballGroup[pos]=new Ball(mouseX,mouseY, 100);
     //     pos++;
     // }
+}
+
+
+void keyPressed(){
+    if (key == 'j'){
+        ballGroup.add(new Ball (width/2, height/2, 50, width, height, true));
+    }
+
+
+
+
 }
